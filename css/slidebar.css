@@ -1,0 +1,135 @@
+.aside {
+  width: 27rem;
+  background: var(--color-secundary-100);
+  padding: 3rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  z-index: 10;
+  border-right: 1px solid var(--color-terceary-50);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aside__logo {
+  position: absolute;
+  top: 50px;
+}
+
+.aside__logo a {
+  font-family: var(--font-body-secundary);
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--text-color-primary-900);
+  padding: 1rem 2rem;
+  letter-spacing: 4px;
+  position: relative;
+}
+
+.aside__logo a::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-top: 5px solid var(--color-skin);
+  border-right: 5px solid var(--color-skin);
+  top: 0;
+  right: 0;
+}
+
+.aside__logo a::before {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-bottom: 5px solid var(--color-skin);
+  border-left: 5px solid var(--color-skin);
+  bottom: 0;
+  left: 0;
+}
+
+.aside__nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.aside__nav ul li a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--color-terceary-50);
+  color: var(--text-color-primary-900);
+  padding: 0.5rem 1.5rem;
+}
+
+.aside__nav ul li a i {
+  padding-right: 1.5rem;
+}
+
+.aside__nav ul li .active {
+  color: var(--color-skin);
+}
+
+.aside__toggle {
+  height: 4rem;
+  width: 4.5rem;
+  border: 1px solid var(--color-terceary-50);
+  cursor: pointer;
+  position: fixed;
+  left: 300px;
+  top: 20px;
+  border-radius: 5px;
+  background: var(--color-secundary-100);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.aside__toggle span {
+  height: 0.2rem;
+  width: 1.8rem;
+  background: var(--color-skin);
+  display: inline-block;
+  position: relative;
+}
+
+.aside__toggle span::before {
+  content: "";
+  height: 0.2rem;
+  width: 1.8rem;
+  background: var(--color-skin);
+  position: absolute;
+  top: -6px;
+  left: 0;
+}
+
+.aside__toggle span::after {
+  content: "";
+  height: 0.2rem;
+  width: 1.8rem;
+  background: var(--color-skin);
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+/*# sourceMappingURL=slidebar.css.map */
