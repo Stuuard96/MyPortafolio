@@ -101,6 +101,15 @@ a {
   padding: 0 3rem;
   z-index: 0;
   opacity: 1;
+
+  .container {
+    padding-top: 6rem;
+    padding-bottom: 7rem;
+  }
+}
+
+.hidden {
+  display: none !important;
 }
 
 .main__content {
@@ -121,8 +130,43 @@ a {
   position: relative;
 }
 
+.section__title {
+  flex: 0 1 100%;
+  max-width: 100%;
+  padding-bottom: 6rem;
+
+  h2 {
+    font-size: 4rem;
+    color: var(--text-color-primary-900);
+    font-weight: 700;
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 0.4rem;
+      width: 5rem;
+      background: var(--color-skin);
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      height: 0.4rem;
+      width: 2.5rem;
+      background: var(--color-skin);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin-top: 0.5rem;
+    }
+  }
+}
+
 @import "slidebar.scss";
 @import "home.scss";
+@import "about.scss";
 
 /************** Buscar fallas de desbordamiento *************/
 /* *{
