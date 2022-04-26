@@ -29,7 +29,9 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
   margin: 0;
 }
 
@@ -44,6 +46,13 @@ h3 {
       font-weight: 600;
       color: var(--color-skin);
     }
+  }
+
+  &.title {
+    font-size: 2.4rem;
+    padding-bottom: 3rem;
+    font-weight: 700;
+    color: var(--text-color-primary-900);
   }
 
   &.profession {
@@ -90,6 +99,10 @@ a {
   }
 }
 
+.shadow__dark {
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
 .padd-15 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -131,7 +144,7 @@ a {
 }
 
 .section__title {
-  flex: 0 1 100%;
+  flex: 0 0 100%;
   max-width: 100%;
   padding-bottom: 6rem;
 

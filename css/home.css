@@ -8,8 +8,8 @@
 
 .home__info {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 60%;
-          flex: 0 1 60%;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
   max-width: 60%;
 }
 
@@ -21,8 +21,8 @@
 
 .home__img {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 40%;
-          flex: 0 1 40%;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%;
   max-width: 40%;
   text-align: center;
   /* display: flex;
