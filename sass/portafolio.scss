@@ -1,3 +1,4 @@
+/************************ Portafolio ************************/
 .portafolio {
   &__heading {
     flex: 0 0 100%;
@@ -28,6 +29,19 @@
     img {
       width: 100%;
       display: block;
+    }
+  }
+  @media (max-width: 1023px) {
+    &__item {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__item {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
 }

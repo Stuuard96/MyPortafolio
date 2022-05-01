@@ -1,3 +1,4 @@
+/************************** Contact *************************/
 .contact {
   &__title {
     color: var(--color-skin);
@@ -46,6 +47,7 @@
   &__form {
     flex: 0 0 100%;
     max-width: 100%;
+    text-align: center;
 
     .col-6 {
       flex: 0 0 50%;
@@ -86,6 +88,27 @@
     .btn {
       height: 5rem;
       padding: 0 5rem;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    &__info--item {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__info--item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    &__form {
+      .col-6 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
     }
   }
 }

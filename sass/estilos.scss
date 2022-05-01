@@ -178,6 +178,12 @@ a {
   }
 }
 
+@media (max-width: 1199px) {
+  .main__content {
+    padding-left: 0;
+  }
+}
+
 @import "slidebar.scss";
 @import "home.scss";
 @import "about.scss";

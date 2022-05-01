@@ -1,3 +1,4 @@
+/************************ Slidebar **************************/
 .aside {
   width: 27rem;
   background: var(--color-secundary-100);
@@ -131,5 +132,11 @@
   position: absolute;
   top: 6px;
   left: 0;
+}
+
+@media (max-width: 1199px) {
+  .aside {
+    left: -270px;
+  }
 }
 /*# sourceMappingURL=slidebar.css.map */

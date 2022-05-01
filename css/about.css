@@ -1,3 +1,4 @@
+/************************** About ***************************/
 .about__content {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
@@ -196,5 +197,20 @@
   /* text-align: justify; */
   /* white-space: pre-wrap; */
   color: var(--text-color-secundary-700);
+}
+
+@media (max-width: 1199px) {
+  .about__info--item p span {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .about__info, .about__skill, .about__education, .about__experience {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=about.css.map */

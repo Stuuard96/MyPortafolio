@@ -1,3 +1,4 @@
+/************************** About ***************************/
 .about {
   &__content {
     flex: 0 0 100%;
@@ -183,6 +184,28 @@
           color: var(--text-color-secundary-700);
         }
       }
+    }
+  }
+
+  @media (max-width: 1199px) {
+    &__info {
+      &--item {
+        p {
+          span {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__info,
+    &__skill,
+    &__education,
+    &__experience {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
 }

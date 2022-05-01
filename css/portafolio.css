@@ -1,3 +1,4 @@
+/************************ Portafolio ************************/
 .portafolio__heading {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
@@ -30,5 +31,23 @@
 .portafolio__img img {
   width: 100%;
   display: block;
+}
+
+@media (max-width: 1023px) {
+  .portafolio__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .portafolio__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=portafolio.css.map */
