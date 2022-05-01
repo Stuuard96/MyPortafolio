@@ -3,7 +3,6 @@
   --color-primary-900: #f2f2fc;
   --color-secundary-100: #fdf9ff;
   --color-terceary-50: #e8dfec;
-  --color-skin: #ec1839;
   --text-color-primary-900: #302e4d;
   --text-color-secundary-700: #504e70;
   --font-body-primary: "Work Sans", sans-serif;
@@ -20,6 +19,14 @@ html {
 body {
   font-family: var(--font-body-primary);
   line-height: 1.5;
+}
+
+body.dark {
+  --color-primary-900: #151515;
+  --color-secundary-100: #222222;
+  --color-terceary-50: #393939;
+  --text-color-primary-900: #ffffff;
+  --text-color-secundary-700: #e9e9e9;
 }
 
 *,
@@ -116,7 +123,6 @@ a {
   background: var(--color-primary-900);
   min-height: 100vh;
   padding: 0 3rem;
-  z-index: 0;
   opacity: 1;
 }
 

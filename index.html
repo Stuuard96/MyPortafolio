@@ -1,472 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Portafolio</title>
-    <!--------------------- CSS Files------------------------>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/estilos.css" />
-    <!--------------------- JS Files------------------------>
-    <script
-      src="https://kit.fontawesome.com/de3770d113.js"
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/script.js"></script>
-  </head>
 
-  <body>
-    <!--------------- Main Container Start ------------------>
-    <div class="main__container">
-      <!-------------------- Aside Start -------------------->
-      <div class="aside">
-        <div class="aside__logo">
-          <a href="#">Portfolio</a>
-        </div>
-        <div class="aside__toggle">
-          <span></span>
-        </div>
-        <nav class="aside__nav">
-          <ul>
-            <li>
-              <a href="#" class="active"><i class="fa fa-home"></i>Home</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-user"></i>About</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-list"></i>Services</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-briefcase"></i>Portafolio</a>
-            </li>
-            <li>
-              <a href="#"><i class="fa fa-comments"></i>Contact</a>
-            </li>
-          </ul>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio</title>
+  <!-------------------- CSS Files------------------------>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/skins/color-1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!------------------ Style Switcher -------------------->
+  <link rel="stylesheet" href="css/skins/color-1.css" class="alternate__style" title="color-1" disabled>
+  <link rel="stylesheet" href="css/skins/color-2.css" class="alternate__style" title="color-2" disabled>
+  <link rel="stylesheet" href="css/skins/color-3.css" class="alternate__style" title="color-3" disabled>
+  <link rel="stylesheet" href="css/skins/color-4.css" class="alternate__style" title="color-4" disabled>
+  <link rel="stylesheet" href="css/skins/color-5.css" class="alternate__style" title="color-5" disabled>
+  <link rel="stylesheet" href="css/style-switcher.css">
+  <!--------------------- JS Files------------------------>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer">
+  </script>
+  <script defer src="js/script.js"></script>
+  <script defer src="js/style-switcher.js"></script>
+</head>
+
+<body>
+  <!--------------- Main Container Start ------------------>
+  <div class="main__container">
+    <!-------------------- Aside Start -------------------->
+    <div class="aside">
+      <div class="aside__logo">
+        <a href="#home">Portfolio</a>
       </div>
-      <!-------------------- Aside End ---------------------->
-
-      <!---------------- Main Content Start ----------------->
-      <div class="main__content">
-        <!-------------- Home Section Start ----------------->
-        <section class="home section">
-          <div class="container">
-            <div class="row">
-              <div class="home__info padd-15">
-                <h3 class="hello">
-                  Hello, my name is <span class="name">Stuard Quiroz</span>
-                </h3>
-                <h3 class="profession">
-                  I'm a <span class="typing">Web Developer</span>
-                </h3>
-                <p>
-                  Hola me llamo Stuard Quiroz, soy egresado de la carrera
-                  Ingeniería Informática y actualmente me desempeño como
-                  Desarrollador Web.
-                </p>
-                <a href="#contact" class="btn hire__me">Hire me</a>
-              </div>
-              <div class="home__img padd-15">
-                <img src="images/face.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </section>
-        <!---------------- Home Section End ----------------->
-
-        <!---------------- About Section Start -------------->
-        <section class="about section">
-          <div class="container">
-            <div class="row">
-              <div class="section__title padd-15">
-                <h2>About Me</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="about__content padd-15">
-                <div class="row">
-                  <div class="about__text padd-15">
-                    <h3>I'm Stuard Quiroz and <span>Web Developer</span></h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ipsum, exercitationem rerum. Obcaecati, harum incidunt
-                      suscipit, pariatur, ipsum officiis in aut omnis magni
-                      voluptas nemo non veniam autem tempora tempore nam.
-                    </p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="about__info padd-15">
-                    <div class="row">
-                      <div class="about__info--item padd-15">
-                        <p>
-                          Profession:&nbsp;&nbsp;<span>Ing. Informática</span>
-                        </p>
-                      </div>
-                      <div class="about__info--item padd-15">
-                        <p>Email:&nbsp;&nbsp;<span>stuardqc@gmail.com</span></p>
-                      </div>
-                      <div class="about__info--item padd-15">
-                        <p>Degree:&nbsp;&nbsp;<span>CS</span></p>
-                      </div>
-                      <div class="about__info--item padd-15">
-                        <p>Phone:&nbsp;&nbsp;<span>+51989743811</span></p>
-                      </div>
-                      <div class="about__info--item padd-15">
-                        <p>Country:&nbsp;&nbsp;<span>Perú</span></p>
-                      </div>
-                      <div class="about__info--item padd-15">
-                        <p>Frelance:&nbsp;&nbsp;<span>Available</span></p>
-                      </div>
-                      <div class="about__info--item padd-15">
-                        <p>
-                          Website:<span
-                            >https://github.com/Stuuard96/MyPortafolio</span
-                          >
-                        </p>
-                      </div>
-                      <div class="about__info--item padd-15">
-                        <p>Github:<span>https://github.com/Stuuard96</span></p>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="about__buttons padd-15">
-                        <a href="#" class="btn">Download CV</a
-                        ><a href="#contact" class="btn hire__me">Hire me</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="about__skill padd-15">
-                    <div class="row">
-                      <div class="skill__item padd-15">
-                        <h5>HTML5</h5>
-                        <div class="skill__progress">
-                          <div
-                            class="skill__progress--in"
-                            style="width: 96%"
-                          ></div>
-                          <div class="skill__progress--percent">96%</div>
-                        </div>
-                      </div>
-                      <div class="skill__item padd-15">
-                        <h5>CSS3</h5>
-                        <div class="skill__progress">
-                          <div
-                            class="skill__progress--in"
-                            style="width: 76%"
-                          ></div>
-                          <div class="skill__progress--percent">76%</div>
-                        </div>
-                      </div>
-                      <div class="skill__item padd-15">
-                        <h5>Javascript</h5>
-                        <div class="skill__progress">
-                          <div
-                            class="skill__progress--in"
-                            style="width: 66%"
-                          ></div>
-                          <div class="skill__progress--percent">66%</div>
-                        </div>
-                      </div>
-                      <div class="skill__item padd-15">
-                        <h5>Angular</h5>
-                        <div class="skill__progress">
-                          <div
-                            class="skill__progress--in"
-                            style="width: 66%"
-                          ></div>
-                          <div class="skill__progress--percent">66%</div>
-                        </div>
-                      </div>
-                      <div class="skill__item padd-15">
-                        <h5>Angular Material</h5>
-                        <div class="skill__progress">
-                          <div
-                            class="skill__progress--in"
-                            style="width: 76%"
-                          ></div>
-                          <div class="skill__progress--percent">76%</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="about__education padd-15">
-                    <h3 class="title">Education</h3>
-                    <div class="row">
-                      <div class="timeline__box padd-15">
-                        <div class="timeline shadow__dark">
-                          <!--------- Timeline Item --------->
-                          <div class="timeline__item">
-                            <div class="timeline__item--circle"></div>
-                            <h3 class="timeline__item--date">
-                              <i class="fa fa-calendar"></i> 2016 - 2022
-                            </h3>
-                            <h4 class="timeline__item--title">
-                              Universidad Nacional José Faustino Sánchez Carrión
-                            </h4>
-                            <p class="timeline__item--text">
-                              Ingeniería Informática - Egresado
-                            </p>
-                          </div>
-                          <!-------- Timeline Item -------->
-                          <div class="timeline__item">
-                            <div class="timeline__item--circle"></div>
-                            <h3 class="timeline__item--date">
-                              <i class="fa fa-calendar"></i> 07/09/2019 -
-                              09/11/2019
-                            </h3>
-                            <h4 class="timeline__item--title">
-                              Dev Master Perú
-                            </h4>
-                            <p class="timeline__item--text">
-                              Desarrollo Web con Html5, CSS3 y JavaScript
-                            </p>
-                          </div>
-                          <!-------- Timeline Item -------->
-                          <div class="timeline__item">
-                            <div class="timeline__item--circle"></div>
-                            <h3 class="timeline__item--date">
-                              <i class="fa fa-calendar"></i> 25/10/2020 -
-                              13/12/2020
-                            </h3>
-                            <h4 class="timeline__item--title">
-                              Dev Master Perú
-                            </h4>
-                            <p class="timeline__item--text">
-                              Base de Datos con SQL Server 2017
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="about__experience padd-15">
-                    <h3 class="title">Experience</h3>
-                    <div class="row">
-                      <div class="timeline__box padd-15">
-                        <div class="timeline shadow__dark">
-                          <!--------- Timeline Item --------->
-                          <div class="timeline__item">
-                            <div class="timeline__item--circle"></div>
-                            <h3 class="timeline__item--date">
-                              <i class="fa fa-calendar"></i> 12/01/2019 -
-                              15/04/2020
-                            </h3>
-                            <h4 class="timeline__item--title">E&S Solutions</h4>
-                            <p class="timeline__item--text">
-                              Tareas realizadas: Creación de APIS en ASP.NET
-                              Core (GET, POST, PUT, DELETE) en el lenguaje de
-                              programación C# utilizando Entity Framework,
-                              manejando un modelo de objetos, y buenas formas de
-                              programación como Patrón de Repositorio(Repository
-                              Pattern) e inyección de dependencias,entre otros.
-                              <br /><br />
-                              Desenvolvimiento en un ambiente de trabajo real
-                              utilizando herramientas tecnológicas como Git,
-                              Azure Devops, Visual Studio, Management Studio,
-                              entre otros.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!---------------- About Section End ---------------->
-
-        <!------------ Portafolio Section Start ------------->
-        <section class="portafolio section">
-          <div class="container">
-            <div class="row">
-              <div class="section__title padd-15">
-                <h2>Portfolio</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="portafolio__heading padd-15">
-                <h2>My Last Projects:</h2>
-              </div>
-            </div>
-            <div class="row">
-              <!---------- Portafolio Item Start ------------>
-              <div class="portafolio__item padd-15">
-                <div class="portafolio__item--inner shadow__dark">
-                  <div class="portafolio__img">
-                    <img src="images/portfolio/portfolio-1.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <!------------ Portafolio Item End ------------>
-              <!---------- Portafolio Item Start ------------>
-              <div class="portafolio__item padd-15">
-                <div class="portafolio__item--inner shadow__dark">
-                  <div class="portafolio__img">
-                    <img src="images/portfolio/portfolio-2.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <!------------ Portafolio Item End ------------>
-              <!---------- Portafolio Item Start ------------>
-              <div class="portafolio__item padd-15">
-                <div class="portafolio__item--inner shadow__dark">
-                  <div class="portafolio__img">
-                    <img src="images/portfolio/portfolio-3.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <!------------ Portafolio Item End ------------>
-              <!---------- Portafolio Item Start ------------>
-              <div class="portafolio__item padd-15">
-                <div class="portafolio__item--inner shadow__dark">
-                  <div class="portafolio__img">
-                    <img src="images/portfolio/portfolio-4.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <!------------ Portafolio Item End ------------>
-              <!---------- Portafolio Item Start ------------>
-              <div class="portafolio__item padd-15">
-                <div class="portafolio__item--inner shadow__dark">
-                  <div class="portafolio__img">
-                    <img src="images/portfolio/portfolio-5.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <!------------ Portafolio Item End ------------>
-              <!---------- Portafolio Item Start ------------>
-              <div class="portafolio__item padd-15">
-                <div class="portafolio__item--inner shadow__dark">
-                  <div class="portafolio__img">
-                    <img src="images/portfolio/portfolio-6.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <!------------ Portafolio Item End ------------>
-            </div>
-          </div>
-        </section>
-        <!------------- Portafolio Section End -------------->
-
-        <!------------- Contact Section Start --------------->
-        <section class="contact section">
-          <div class="container">
-            <div class="row">
-              <div class="section__title padd-15">
-                <h2>Contact Me</h2>
-              </div>
-            </div>
-            <h3 class="contact__title padd-15">Have you Any Question?</h3>
-            <h4 class="contact__title--sub padd-15">I'M AT YOUR SERVICE</h4>
-            <div class="row">
-              <!------------Contact info item start---------->
-              <div class="contact__info--item padd-15">
-                <div class="icon">
-                  <i class="fa fa-phone"></i>
-                </div>
-                <h4>Call Us On</h4>
-                <p>+51 989743811</p>
-              </div>
-              <!------------Contact info item End------------>
-              <!------------Contact info item start---------->
-              <div class="contact__info--item padd-15">
-                <div class="icon">
-                  <i class="fa fa-map-marker-alt"></i>
-                </div>
-                <h4>Country</h4>
-                <p>Perú</p>
-              </div>
-              <!------------Contact info item End------------>
-              <!------------Contact info item start---------->
-              <div class="contact__info--item padd-15">
-                <div class="icon">
-                  <i class="fa fa-envelope"></i>
-                </div>
-                <h4>Email</h4>
-                <p>stuardqc_@gmail.com</p>
-              </div>
-              <!------------Contact info item End------------>
-              <!------------Contact info item start---------->
-              <div class="contact__info--item padd-15">
-                <div class="icon">
-                  <i class="fa-solid fa-earth-americas"></i>
-                </div>
-                <h4>Website</h4>
-                <p>https://stuuard96.github.io/MyPortafolio/</p>
-              </div>
-              <!------------Contact info item End------------>
-            </div>
-            <h3 class="contact__title padd-15">SEND ME AN EMAIL</h3>
-            <h4 class="contact__title--sub padd-15">
-              I'M VERY RESPONSIVE TO MESSAGES
-            </h4>
-            <!------------------ Contact Form --------------->
-            <div class="row">
-              <div class="contact__form padd-15">
-                <div class="row">
-                  <div class="contact__form--item col-6 padd-15">
-                    <div class="contact__form--group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Name"
-                      />
-                    </div>
-                  </div>
-                  <div class="contact__form--item col-6 padd-15">
-                    <div class="contact__form--group">
-                      <input
-                        type="email"
-                        class="form-control"
-                        placeholder="Email"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="contact__form--item col-12 padd-15">
-                    <div class="contact__form--group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Subject"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="contact__form--item col-12 padd-15">
-                    <div class="contact__form--group">
-                      <textarea
-                        name=""
-                        class="form-control"
-                        id=""
-                        placeholder="Message"
-                      ></textarea>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="contact__form--item col-12 padd-15">
-                    <button type="submit" class="btn">Send Message</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!------------- Contact Section End ----------------->
+      <div class="aside__toggle">
+        <span></span>
       </div>
-      <!---------------- Main Content End ------------------->
+      <nav class="aside__nav">
+        <ul>
+          <li>
+            <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
+          </li>
+          <li>
+            <a href="#about"><i class="fa fa-user"></i>About</a>
+          </li>
+          <!-- <li>
+            <a href="#services"><i class="fa fa-list"></i>Services</a>
+          </li> -->
+          <li>
+            <a href="#portafolio"><i class="fa fa-briefcase"></i>Portafolio</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fa fa-comments"></i>Contact</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <!--------------- Main Container End -------------------->
-  </body>
+    <!-------------------- Aside End ---------------------->
+
+    <!---------------- Main Content Start ----------------->
+    <div class="main__content">
+      <!-------------- Home Section Start ----------------->
+      <section class="home section" id="home">
+        <div class="container">
+          <div class="row">
+            <div class="home__info padd-15">
+              <h3 class="hello">
+                Hello, my name is <span class="name">Stuard Quiroz</span>
+              </h3>
+              <h3 class="profession">
+                I'm a <span class="typing"></span>
+              </h3>
+              <p>
+                Hola me llamo Stuard Quiroz, soy egresado de la carrera
+                Ingeniería Informática y actualmente me desempeño como
+                Desarrollador Web.
+              </p>
+              <a href="#contact" class="btn hire__me">Hire me</a>
+            </div>
+            <div class="home__img padd-15">
+              <img src="images/face-removebg-preview(1).png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---------------- Home Section End ----------------->
+
+      <!---------------- About Section Start -------------->
+      <section class="about section" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="section__title padd-15">
+              <h2>About Me</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="about__content padd-15">
+              <div class="row">
+                <div class="about__text padd-15">
+                  <h3>I'm Stuard Quiroz and <span>Web Developer</span></h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ipsum, exercitationem rerum. Obcaecati, harum incidunt
+                    suscipit, pariatur, ipsum officiis in aut omnis magni
+                    voluptas nemo non veniam autem tempora tempore nam.
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="about__info padd-15">
+                  <div class="row">
+                    <div class="about__info--item padd-15">
+                      <p>
+                        Profession:&nbsp;&nbsp;<span>Ing. Informática</span>
+                      </p>
+                    </div>
+                    <div class="about__info--item padd-15">
+                      <p>Email:&nbsp;&nbsp;<span>stuardqc@gmail.com</span></p>
+                    </div>
+                    <div class="about__info--item padd-15">
+                      <p>Degree:&nbsp;&nbsp;<span>CS</span></p>
+                    </div>
+                    <div class="about__info--item padd-15">
+                      <p>Phone:&nbsp;&nbsp;<span>+51989743811</span></p>
+                    </div>
+                    <div class="about__info--item padd-15">
+                      <p>Country:&nbsp;&nbsp;<span>Perú</span></p>
+                    </div>
+                    <div class="about__info--item padd-15">
+                      <p>Frelance:&nbsp;&nbsp;<span>Available</span></p>
+                    </div>
+                    <div class="about__info--item padd-15">
+                      <p>
+                        Website:<span>https://github.com/Stuuard96/MyPortafolio</span>
+                      </p>
+                    </div>
+                    <div class="about__info--item padd-15">
+                      <p>Github:<span>https://github.com/Stuuard96</span></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="about__buttons padd-15">
+                      <a href="#" class="btn">Download CV</a><a href="#contact" class="btn hire__me">Hire me</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="about__skill padd-15">
+                  <div class="row">
+                    <div class="skill__item padd-15">
+                      <h5>HTML5</h5>
+                      <div class="skill__progress">
+                        <div class="skill__progress--in" style="width: 96%"></div>
+                        <div class="skill__progress--percent">96%</div>
+                      </div>
+                    </div>
+                    <div class="skill__item padd-15">
+                      <h5>CSS3</h5>
+                      <div class="skill__progress">
+                        <div class="skill__progress--in" style="width: 76%"></div>
+                        <div class="skill__progress--percent">76%</div>
+                      </div>
+                    </div>
+                    <div class="skill__item padd-15">
+                      <h5>Javascript</h5>
+                      <div class="skill__progress">
+                        <div class="skill__progress--in" style="width: 66%"></div>
+                        <div class="skill__progress--percent">66%</div>
+                      </div>
+                    </div>
+                    <div class="skill__item padd-15">
+                      <h5>Angular</h5>
+                      <div class="skill__progress">
+                        <div class="skill__progress--in" style="width: 66%"></div>
+                        <div class="skill__progress--percent">66%</div>
+                      </div>
+                    </div>
+                    <div class="skill__item padd-15">
+                      <h5>Angular Material</h5>
+                      <div class="skill__progress">
+                        <div class="skill__progress--in" style="width: 76%"></div>
+                        <div class="skill__progress--percent">76%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="about__education padd-15">
+                  <h3 class="title">Education</h3>
+                  <div class="row">
+                    <div class="timeline__box padd-15">
+                      <div class="timeline shadow__dark">
+                        <!--------- Timeline Item --------->
+                        <div class="timeline__item">
+                          <div class="timeline__item--circle"></div>
+                          <h3 class="timeline__item--date">
+                            <i class="fa fa-calendar"></i> 2016 - 2022
+                          </h3>
+                          <h4 class="timeline__item--title">
+                            Universidad Nacional José Faustino Sánchez Carrión
+                          </h4>
+                          <p class="timeline__item--text">
+                            Ingeniería Informática - Egresado
+                          </p>
+                        </div>
+                        <!-------- Timeline Item -------->
+                        <div class="timeline__item">
+                          <div class="timeline__item--circle"></div>
+                          <h3 class="timeline__item--date">
+                            <i class="fa fa-calendar"></i> 07/09/2019 -
+                            09/11/2019
+                          </h3>
+                          <h4 class="timeline__item--title">
+                            Dev Master Perú
+                          </h4>
+                          <p class="timeline__item--text">
+                            Desarrollo Web con Html5, CSS3 y JavaScript
+                          </p>
+                        </div>
+                        <!-------- Timeline Item -------->
+                        <div class="timeline__item">
+                          <div class="timeline__item--circle"></div>
+                          <h3 class="timeline__item--date">
+                            <i class="fa fa-calendar"></i> 25/10/2020 -
+                            13/12/2020
+                          </h3>
+                          <h4 class="timeline__item--title">
+                            Dev Master Perú
+                          </h4>
+                          <p class="timeline__item--text">
+                            Base de Datos con SQL Server 2017
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="about__experience padd-15">
+                  <h3 class="title">Experience</h3>
+                  <div class="row">
+                    <div class="timeline__box padd-15">
+                      <div class="timeline shadow__dark">
+                        <!--------- Timeline Item --------->
+                        <div class="timeline__item">
+                          <div class="timeline__item--circle"></div>
+                          <h3 class="timeline__item--date">
+                            <i class="fa fa-calendar"></i> 12/01/2019 -
+                            15/04/2020
+                          </h3>
+                          <h4 class="timeline__item--title">E&S Solutions</h4>
+                          <p class="timeline__item--text">
+                            Tareas realizadas: Creación de APIS en ASP.NET
+                            Core (GET, POST, PUT, DELETE) en el lenguaje de
+                            programación C# utilizando Entity Framework,
+                            manejando un modelo de objetos, y buenas formas de
+                            programación como Patrón de Repositorio(Repository
+                            Pattern) e inyección de dependencias,entre otros.
+                            <br /><br />
+                            Desenvolvimiento en un ambiente de trabajo real
+                            utilizando herramientas tecnológicas como Git,
+                            Azure Devops, Visual Studio, Management Studio,
+                            entre otros.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!---------------- About Section End ---------------->
+
+      <!------------ Portafolio Section Start ------------->
+      <section class="portafolio section" id="portafolio">
+        <div class="container">
+          <div class="row">
+            <div class="section__title padd-15">
+              <h2>Portfolio</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="portafolio__heading padd-15">
+              <h2>My Last Projects:</h2>
+            </div>
+          </div>
+          <div class="row">
+            <!---------- Portafolio Item Start ------------>
+            <div class="portafolio__item padd-15">
+              <div class="portafolio__item--inner shadow__dark">
+                <div class="portafolio__img">
+                  <img src="images/portfolio/portfolio-1.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!------------ Portafolio Item End ------------>
+            <!---------- Portafolio Item Start ------------>
+            <div class="portafolio__item padd-15">
+              <div class="portafolio__item--inner shadow__dark">
+                <div class="portafolio__img">
+                  <img src="images/portfolio/portfolio-2.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!------------ Portafolio Item End ------------>
+            <!---------- Portafolio Item Start ------------>
+            <div class="portafolio__item padd-15">
+              <div class="portafolio__item--inner shadow__dark">
+                <div class="portafolio__img">
+                  <img src="images/portfolio/portfolio-3.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!------------ Portafolio Item End ------------>
+            <!---------- Portafolio Item Start ------------>
+            <div class="portafolio__item padd-15">
+              <div class="portafolio__item--inner shadow__dark">
+                <div class="portafolio__img">
+                  <img src="images/portfolio/portfolio-4.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!------------ Portafolio Item End ------------>
+            <!---------- Portafolio Item Start ------------>
+            <div class="portafolio__item padd-15">
+              <div class="portafolio__item--inner shadow__dark">
+                <div class="portafolio__img">
+                  <img src="images/portfolio/portfolio-5.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!------------ Portafolio Item End ------------>
+            <!---------- Portafolio Item Start ------------>
+            <div class="portafolio__item padd-15">
+              <div class="portafolio__item--inner shadow__dark">
+                <div class="portafolio__img">
+                  <img src="images/portfolio/portfolio-6.png" alt="" />
+                </div>
+              </div>
+            </div>
+            <!------------ Portafolio Item End ------------>
+          </div>
+        </div>
+      </section>
+      <!------------- Portafolio Section End -------------->
+
+      <!------------- Contact Section Start --------------->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="section__title padd-15">
+              <h2>Contact Me</h2>
+            </div>
+          </div>
+          <h3 class="contact__title padd-15">Have you Any Question?</h3>
+          <h4 class="contact__title--sub padd-15">I'M AT YOUR SERVICE</h4>
+          <div class="row">
+            <!------------Contact info item start---------->
+            <div class="contact__info--item padd-15">
+              <div class="icon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <h4>Call Us On</h4>
+              <p>+51 989743811</p>
+            </div>
+            <!------------Contact info item End------------>
+            <!------------Contact info item start---------->
+            <div class="contact__info--item padd-15">
+              <div class="icon">
+                <i class="fa fa-map-marker-alt"></i>
+              </div>
+              <h4>Country</h4>
+              <p>Perú</p>
+            </div>
+            <!------------Contact info item End------------>
+            <!------------Contact info item start---------->
+            <div class="contact__info--item padd-15">
+              <div class="icon">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <h4>Email</h4>
+              <p>stuardqc_@gmail.com</p>
+            </div>
+            <!------------Contact info item End------------>
+            <!------------Contact info item start---------->
+            <div class="contact__info--item padd-15">
+              <div class="icon">
+                <i class="fas fa-globe-americas"></i>
+              </div>
+              <h4>Website</h4>
+              <p>https://stuuard96.github.io/MyPortafolio/</p>
+            </div>
+            <!------------Contact info item End------------>
+          </div>
+          <h3 class="contact__title padd-15">SEND ME AN EMAIL</h3>
+          <h4 class="contact__title--sub padd-15">
+            I'M VERY RESPONSIVE TO MESSAGES
+          </h4>
+          <!------------------ Contact Form --------------->
+          <div class="row">
+            <div class="contact__form padd-15">
+              <div class="row">
+                <div class="contact__form--item col-6 padd-15">
+                  <div class="contact__form--group">
+                    <input type="text" class="form-control" placeholder="Name" />
+                  </div>
+                </div>
+                <div class="contact__form--item col-6 padd-15">
+                  <div class="contact__form--group">
+                    <input type="email" class="form-control" placeholder="Email" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="contact__form--item col-12 padd-15">
+                  <div class="contact__form--group">
+                    <input type="text" class="form-control" placeholder="Subject" />
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="contact__form--item col-12 padd-15">
+                  <div class="contact__form--group">
+                    <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="contact__form--item col-12 padd-15">
+                  <button type="submit" class="btn">Send Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------- Contact Section End ----------------->
+    </div>
+    <!---------------- Main Content End ------------------->
+  </div>
+  <!--------------- Style Switcher Start ------------------>
+  <div class="style__switcher">
+    <div class="style__switcher--toggler s-icon">
+      <i class="fas fa-cog fa-spin"></i>
+    </div>
+    <div class="day__night s-icon">
+      <i class="fas"></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="color">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+  </div>
+  <!--------------- Style Switcher End -------------------->
+</body>
+
 </html>
