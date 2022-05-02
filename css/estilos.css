@@ -16,6 +16,13 @@ html {
   /*1 rem = 10px*/
 }
 
+html,
+body {
+  max-width: 1440px !important;
+  overflow-x: hidden !important;
+  margin: 0 auto !important;
+}
+
 body {
   font-family: var(--font-body-primary);
   line-height: 1.5;
@@ -51,7 +58,7 @@ h3.hello {
 
 h3.hello span {
   font-family: var(--font-body-secundary);
-  font-size: 3.8rem;
+  font-size: 3.5rem;
   font-weight: 600;
   color: var(--color-skin);
 }
@@ -135,6 +142,10 @@ a {
   display: none !important;
 }
 
+.main__container {
+  position: relative;
+}
+
 .main__content {
   padding-left: 27rem;
 }
@@ -204,7 +215,6 @@ a {
   background: var(--color-secundary-100);
   padding: 3rem;
   position: fixed;
-  left: 0;
   top: 0;
   height: 100%;
   z-index: 10;
@@ -367,9 +377,6 @@ a {
           flex: 0 0 40%;
   max-width: 40%;
   text-align: center;
-  /* display: flex;
-    align-items: center;
-    justify-content: center; */
   position: relative;
 }
 
@@ -812,11 +819,11 @@ a {
 }
 
 /************** Buscar fallas de desbordamiento *************/
-/* *{
+/* * {
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;
-  max-width: 1200px !important;
+  max-width: 1440px !important;
   margin: 0 auto !important;
 } */
 /*# sourceMappingURL=estilos.css.map */

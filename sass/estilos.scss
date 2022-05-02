@@ -16,6 +16,13 @@ html {
   /*1 rem = 10px*/
 }
 
+html,
+body {
+  max-width: 1440px !important;
+  overflow-x: hidden !important;
+  margin: 0 auto !important;
+}
+
 body {
   font-family: var(--font-body-primary);
   line-height: 1.5;
@@ -50,7 +57,7 @@ h3 {
 
     span {
       font-family: var(--font-body-secundary);
-      font-size: 3.8rem;
+      font-size: 3.5rem;
       font-weight: 600;
       color: var(--color-skin);
     }
@@ -133,6 +140,10 @@ a {
   display: none !important;
 }
 
+.main__container {
+  position: relative;
+}
+
 .main__content {
   padding-left: 27rem;
 }
@@ -198,10 +209,10 @@ a {
 @import "contact.scss";
 
 /************** Buscar fallas de desbordamiento *************/
-/* *{
+/* * {
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;
-  max-width: 1200px !important;
+  max-width: 1440px !important;
   margin: 0 auto !important;
 } */
