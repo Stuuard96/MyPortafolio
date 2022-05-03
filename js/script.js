@@ -29,6 +29,7 @@ function navToggler() {
 /*------------------------- Aside --------------------------*/
 navList.forEach(a => {
     a.addEventListener('click', function () {
+        windowScroll();
         const isCurrentClosed = !this.classList.contains('active');
         removeBackSection();
         navList.forEach((a, j) => {

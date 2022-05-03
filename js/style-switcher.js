@@ -7,7 +7,7 @@ const dayNight = document.querySelector(".day__night");
 
 /*------------------- Execution functions ------------------*/
 iconToggle.addEventListener("click", switcherToggle);
-window.addEventListener("scroll", windowScroll);
+/* window.addEventListener("scroll", windowScroll); */
 dayNight.addEventListener("click", dayNighToggle);
 window.addEventListener("load", dayNighTheme);
 
@@ -17,6 +17,10 @@ function switcherToggle() {
 }
 
 /*------------- Hide Style - Switcher On Scroll ------------*/
+allSection.forEach(element => {
+    element.addEventListener("scroll", windowScroll);
+});
+
 function windowScroll() {
     if (styleSwitcherToggle.classList.contains("open")) {
         styleSwitcherToggle.classList.remove("open");
