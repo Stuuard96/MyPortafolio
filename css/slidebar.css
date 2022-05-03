@@ -17,11 +17,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .aside__logo {
   position: absolute;
-  top: 50px;
+  top: 60px;
 }
 
 .aside__logo a {
@@ -103,6 +105,24 @@
       -ms-flex-align: center;
           align-items: center;
   display: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.aside__toggle.open span {
+  background-color: transparent;
+}
+
+.aside__toggle.open span::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+.aside__toggle.open span::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
 }
 
 .aside__toggle span {
@@ -136,6 +156,18 @@
 @media (max-width: 1199px) {
   .aside {
     left: -270px;
+  }
+  .aside.open {
+    left: 0;
+  }
+  .aside__toggle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 30px;
+  }
+  .aside__toggle.open {
+    left: 300px;
   }
 }
 /*# sourceMappingURL=slidebar.css.map */

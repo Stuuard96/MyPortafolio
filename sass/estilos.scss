@@ -18,9 +18,7 @@ html {
 
 html,
 body {
-  max-width: 1440px !important;
   overflow-x: hidden !important;
-  margin: 0 auto !important;
 }
 
 body {
@@ -51,32 +49,34 @@ h5 {
 }
 
 h3 {
+  @mixin h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color-primary-900);
+  }
+
   &.hello {
-    font-size: 2.8rem;
-    font-weight: 500;
+    @include h3;
 
     span {
       font-family: var(--font-body-secundary);
       font-size: 3.5rem;
-      font-weight: 600;
+      font-weight: 700;
+      letter-spacing: 3px;
       color: var(--color-skin);
     }
   }
 
   &.title {
-    font-size: 2.4rem;
+    @include h3;
     padding-bottom: 3rem;
-    font-weight: 700;
-    color: var(--text-color-primary-900);
   }
 
   &.profession {
-    font-size: 3rem;
+    @include h3;
     padding: 1.5rem 0;
-    font-weight: 500;
 
     span {
-      color: var(--color-skin);
       font-weight: 500;
     }
   }
@@ -125,10 +125,39 @@ a {
 }
 
 .section {
-  background: var(--color-primary-900);
+  position: fixed;
+  left: 270px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
   min-height: 100vh;
   padding: 0 3rem;
+  background: var(--color-primary-900);
   opacity: 1;
+  transition: all 0.3s ease;
+
+  &.active {
+    z-index: 5;
+    opacity: 1;
+    animation: slideSection 1s ease;
+  }
+
+  &.back-section {
+    z-index: 3;
+  }
+
+  @keyframes slideSection {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(0%);
+    }
+  }
 
   .container {
     padding-top: 6rem;
@@ -144,9 +173,7 @@ a {
   position: relative;
 }
 
-.main__content {
-  padding-left: 27rem;
-}
+
 
 .container {
   max-width: 1100px;
@@ -197,8 +224,16 @@ a {
 }
 
 @media (max-width: 1199px) {
-  .main__content {
-    padding-left: 0;
+  .section {
+    left: 0;
+
+    &.open {
+      left: 270px
+    }
+  }
+
+  .section .container {
+    padding-top: 7rem;
   }
 }
 

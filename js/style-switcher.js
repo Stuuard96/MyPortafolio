@@ -1,29 +1,29 @@
-/*------------------ Declaracion Variables -------------------*/
+/*----------------- Variable Declaration -------------------*/
 const body = document.body;
 const iconToggle = document.querySelector(".style__switcher--toggler");
 const styleSwitcherToggle = document.querySelector(".style__switcher");
 const alternateStyles = document.querySelectorAll(".alternate__style");
 const dayNight = document.querySelector(".day__night");
 
-/*------------ Ejecución de las funciones --------------------*/
+/*------------------- Execution functions ------------------*/
 iconToggle.addEventListener("click", switcherToggle);
 window.addEventListener("scroll", windowScroll);
 dayNight.addEventListener("click", dayNighToggle);
 window.addEventListener("load", dayNighTheme);
 
-/*-------------------- Toggle Style Switcher -----------------*/
+/*------------------- Toggle Style Switcher ----------------*/
 function switcherToggle() {
     styleSwitcherToggle.classList.toggle("open");
 }
 
-/*-------------- Hide Style - Switcher On Scroll -------------*/
+/*------------- Hide Style - Switcher On Scroll ------------*/
 function windowScroll() {
     if (styleSwitcherToggle.classList.contains("open")) {
         styleSwitcherToggle.classList.remove("open");
     }
 }
 
-/*----------------------- Theme Colors -----------------------*/
+/*---------------------- Theme Colors ----------------------*/
 function setActiveStyle(color) {
     alternateStyles.forEach((style) => {
         if (color === style.getAttribute("title")) {
@@ -34,7 +34,7 @@ function setActiveStyle(color) {
     });
 }
 
-/*------------------- Theme Litgh and Dark -------------------*/
+/*------------------ Theme Litgh and Dark ------------------*/
 function dayNighToggle() {
     dayNight.querySelector("i").classList.toggle("fa-sun");
     dayNight.querySelector("i").classList.toggle("fa-moon");

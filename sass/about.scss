@@ -56,7 +56,6 @@
     margin-top: 3rem;
 
     .btn {
-      margin-right: 1.5rem;
       margin-top: 1rem;
     }
   }
@@ -200,6 +199,7 @@
   }
 
   @media (max-width: 767px) {
+
     &__info,
     &__skill,
     &__education,

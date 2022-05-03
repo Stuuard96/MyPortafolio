@@ -11,10 +11,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease;
 
   &__logo {
     position: absolute;
-    top: 50px;
+    top: 60px;
 
     a {
       font-family: var(--font-body-secundary);
@@ -89,6 +90,24 @@
     justify-content: center;
     align-items: center;
     display: none;
+    transition: all 0.3s ease;
+
+    &.open {
+      span {
+        background-color: transparent;
+
+        &::before {
+          transform: rotate(45deg);
+          top: 0;
+        }
+
+        &::after {
+          transform: rotate(-45deg);
+          top: 0;
+        }
+      }
+    }
+
 
     span {
       height: 0.2rem;
@@ -121,5 +140,18 @@
 
   @media (max-width: 1199px) {
     left: -270px;
+
+    &.open {
+      left: 0;
+    }
+
+    &__toggle {
+      display: flex;
+      left: 30px;
+
+      &.open {
+        left: 300px;
+      }
+    }
   }
 }
