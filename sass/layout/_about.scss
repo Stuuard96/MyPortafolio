@@ -1,4 +1,3 @@
-/************************** About ***************************/
 .about {
   &__content {
     flex: 0 0 100%;
@@ -137,7 +136,7 @@
         }
 
         &::before {
-          content: "";
+          content: '';
           width: 0.1rem;
           position: absolute;
           height: 100%;
@@ -199,7 +198,6 @@
   }
 
   @media (max-width: 767px) {
-
     &__info,
     &__skill,
     &__education,
