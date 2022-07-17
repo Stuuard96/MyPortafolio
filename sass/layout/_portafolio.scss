@@ -20,9 +20,22 @@
       transform: rotateY(180deg);
     }
 
+    .repositorio {
+      h2 {
+        color: var(--color-skin);
+        font-size: 1.6rem;
+      }
+      a {
+        color: var(--text-color-primary-900);
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+    }
+
     .item {
       height: 35rem;
       background: #fff;
+      margin-top: 2rem;
       margin-bottom: 3rem;
       position: relative;
       transform-style: preserve-3d;
