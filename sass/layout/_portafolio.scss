@@ -26,6 +26,10 @@
         font-size: 1.6rem;
       }
       a {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
         color: var(--text-color-primary-900);
         font-size: 1.5rem;
         cursor: pointer;
