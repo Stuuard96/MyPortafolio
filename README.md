@@ -1,2 +1,2 @@
 # MyPortafolio
-LINK: https://stuuard96.github.io/MyPortafolio/
+LINK: https://myportafoliope.netlify.app/
